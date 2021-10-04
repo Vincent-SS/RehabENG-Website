@@ -3,10 +3,12 @@ import facebookLogo from "../assets/facebook.png";
 import linkedinLogo from "../assets/linkedin.png";
 
 
+
 const Container = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
+        position: absolute;
         bottom: 0;
         > div {
                 width: 90%;
