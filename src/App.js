@@ -7,7 +7,9 @@ import {
   Redirect
 } from "react-router-dom";
 import styled from 'styled-components';
-import About from './screens/About'
+import About from './screens/About';
+import PastProject from './screens/PastProject';
+import CurrentProject from './screens/CurrentProject';
 import Contact from './screens/Contact'
 import Footer from './components/Footer';
 
@@ -51,11 +53,21 @@ function App() {
               <Link to='/supportus'>Support Us</Link>
             </li>
             <li>
+              <Link to='/current-project'>Current Project</Link>
+            </li>
+            <li>
+              <Link to='/past-project'>Past Project</Link>
+            </li>
+            <li>
+              <Link to='/supportus'>Support Us</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </List>
         </Nav>
-
+      </div>
+      <div>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -66,11 +78,11 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/past-project">
-            past project
-          </Route>
           <Route path="/current-project">
-            current project
+            <CurrentProject />
+          </Route>
+          <Route path="/past-project">
+            <PastProject />
           </Route>
           <Route path="/supportus">
             support us
