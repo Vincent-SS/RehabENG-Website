@@ -53,15 +53,6 @@ function App() {
               <Link to='/supportus'>Support Us</Link>
             </li>
             <li>
-              <Link to='/current-project'>Current Project</Link>
-            </li>
-            <li>
-              <Link to='/past-project'>Past Project</Link>
-            </li>
-            <li>
-              <Link to='/supportus'>Support Us</Link>
-            </li>
-            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </List>
@@ -72,7 +63,6 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
-            Hello world
             <About />
           </Route>
           <Route path="/contact">
