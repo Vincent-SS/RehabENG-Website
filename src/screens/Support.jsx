@@ -6,8 +6,6 @@ const Container = styled.div`
         > div {
           margin: 0 auto;
           text-align: center;
-          > div {
-          }
         }
 `
 
@@ -38,7 +36,6 @@ const Support = () => (
                     </td>
                     <td width="30%"></td>
                 </tr>
-
             </table>
         </div>
     </div>
