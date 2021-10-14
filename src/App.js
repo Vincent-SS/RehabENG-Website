@@ -10,6 +10,7 @@ import styled from 'styled-components';
 import About from './screens/About';
 import PastProject from './screens/PastProject';
 import CurrentProject from './screens/CurrentProject';
+import Support from './screens/Support';
 import Contact from './screens/Contact'
 import Footer from './components/Footer';
 
@@ -75,7 +76,7 @@ function App() {
             <PastProject />
           </Route>
           <Route path="/supportus">
-            support us
+            <Support />
           </Route>
           <Route path="/">
             <Redirect to="/about" />
