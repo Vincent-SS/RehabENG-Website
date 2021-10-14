@@ -43,7 +43,6 @@ function App() {
             <li>
               <Link to="/">About Us</Link>
             </li>
-            
             <li>
               <Link to='/past-project'>Past Project</Link>
             </li>
