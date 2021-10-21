@@ -10,6 +10,7 @@ import styled from 'styled-components';
 import About from './screens/About';
 import PastProject from './screens/PastProject';
 import CurrentProject from './screens/CurrentProject';
+import Support from './screens/Support';
 import Contact from './screens/Contact'
 import Footer from './components/Footer';
 
@@ -42,21 +43,11 @@ function App() {
             <li>
               <Link to="/">About Us</Link>
             </li>
-            
             <li>
               <Link to='/past-project'>Past Project</Link>
             </li>
             <li>
               <Link to='/current-project'>Current Project</Link>
-            </li>
-            <li>
-              <Link to='/supportus'>Support Us</Link>
-            </li>
-            <li>
-              <Link to='/current-project'>Current Project</Link>
-            </li>
-            <li>
-              <Link to='/past-project'>Past Project</Link>
             </li>
             <li>
               <Link to='/supportus'>Support Us</Link>
@@ -72,7 +63,6 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
-            Hello world
             <About />
           </Route>
           <Route path="/contact">
@@ -85,7 +75,7 @@ function App() {
             <PastProject />
           </Route>
           <Route path="/supportus">
-            support us
+            <Support />
           </Route>
           <Route path="/">
             <Redirect to="/about" />
