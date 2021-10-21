@@ -26,8 +26,15 @@ const List = styled.ul`
   li {
     list-style-type: none;
     a {
+      font-weight: bold;
       text-decoration: none;
       color: #000;
+    }
+  }
+  li:hover {
+    a {
+      position: relative;
+      top: 1px;
     }
   }
 `;

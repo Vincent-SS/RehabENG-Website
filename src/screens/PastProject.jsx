@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import projectImage1 from "../assets/surgical1.svg";
 import projectImage2 from "../assets/surgical2.svg";
-import projectImage3 from "../assets/surgical3.svg";
+import projectImage3 from "../assets/surgical3.png";
+// import surgicalLamp4 from "../assets/surgical4.png";
 
 const Container = styled.div`
         display: flex;
@@ -12,13 +13,16 @@ const Container = styled.div`
               text-align: center;
             }
             > div {
-              border: 1px solid red;
+              // border: 1px solid red;
               display: grid;
               align-items: center;
               justify-content: center;
               text-align: center;
-              > img {
-                margin: 1rem;
+              > div {
+                > img {
+                  margin: 1rem;
+                  width: 600px;
+                }
               }
             }
           }
@@ -47,9 +51,11 @@ const PastProject = () => (
         <div>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
           <p>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
-          <img src={projectImage1} alt="sampleImage1" />
-          <img src={projectImage2} alt="sampleImage2" />
-          <img src={projectImage3} alt="sampleImage3" />
+          <div>
+            <img src={projectImage1} alt="sampleImage1" />
+            <img src={projectImage2} alt="sampleImage2" />
+            <img src={projectImage3} alt="sampleImage3" />
+          </div>
         </div>
       </div>
     </div>
