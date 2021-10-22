@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import merchImage1 from "../assets/rehabEng_merch.png";
+import Button from '@mui/material/Button';
 
 const Container = styled.div`
         display: flex;
@@ -21,8 +22,7 @@ const Support = () => (
                     <td width="10%"></td>
                     <td width="10%" align="center">
                         <p>RehabEng Unisex Tshirt</p>
-                        <br></br>
-                        <button>Click to buy</button>
+                        <Button variant="contained" style={{backgroundColor:"#C7EAEC", color:"#000"}} >Click to buy</Button>
                     </td>
                     <td width="35%"></td>
                 </tr>
@@ -31,8 +31,7 @@ const Support = () => (
                     <td width="15%"></td>
                     <td width="10%" align="center">
                         <p>RehabEng Unisex Tshirt</p>
-                        <br></br>
-                        <button>Click to buy</button>
+                        <Button variant="contained">Click to buy</Button>
                     </td>
                     <td width="30%"></td>
                 </tr>
