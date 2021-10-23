@@ -1,11 +1,17 @@
 import { ContainerDiv } from '../components/Container';
 import ContactBox from '../components/ContactBox';
+import styled from 'styled-components';
 
+const ContactHeading = styled.h3`
+  margin: 0.5rem;
+  font-family: 'SpaceMono';
+  font-size: ${props => props.primary ? '1.5em' : '1.3em'};
+`
 
 const Contact = () => (
   <ContainerDiv>
-    <h3 style={{margin: '0.5rem'}}>Got any ideas with rehabilitation?</h3>
-    <h2 style={{margin: '0.5rem'}}>Contact us</h2>
+    <ContactHeading>Got any ideas with rehabilitation?</ContactHeading>
+    <ContactHeading primary>Contact us</ContactHeading>
     <ContactBox/>
   </ContainerDiv>
 )
