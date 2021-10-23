@@ -2,7 +2,7 @@ import { TextField } from "@mui/material";
 import { styled } from "@mui/material/styles"
 
 const CustomizedInput = styled(TextField)`
-        width: 50%;
+        width: 70%;
         color: #C7EAEC;
 `;
 
