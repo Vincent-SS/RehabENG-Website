@@ -4,17 +4,19 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   width: 100%;
-  padding: 2rem;
+  padding: ${props => props.mobile ? '1rem' : '2rem'};
 `
 const CenteredDiv = styled.div`
   text-align: center;
 `
 const DescriptionContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 4rem;
+  grid-template-columns: ${props => props.mobile ? '100%' : '1fr 1fr'};
+  grid-template-rows: ${props => props.mobile ? '1fr 1fr' : '100%'};
+  padding: ${props => props.mobile ? '0rem' : '1rem'};
   > div {
-    padding: 2rem;
+    padding: ${props => props.mobile ? '1rem' : '2rem'};
+    text-align: ${props => props.mobile ? 'center' : 'left'}
   }
 `
 const Image = styled.img`
@@ -22,17 +24,18 @@ const Image = styled.img`
 `
 const About = () => {
   const isMobile = useMediaQuery(theme => theme.breakpoints.down('sm'));
+
   return ( 
-    <Container>
+    <Container mobile={isMobile}>
       <CenteredDiv>
         <h2>Welcome to RehabENG UNSW</h2>
       </CenteredDiv>
-      <DescriptionContainer>
-        <div>
+      <DescriptionContainer mobile={isMobile}>
+        <div mobile={isMobile}>
           <h2>About us</h2>
           <p>The Rehabilitation Engineering Society (formerly EWH UNSW) runs projects where students co-design and prototype assistive technology with a real client with a disability. Feel free to message us if you are interested in our current projects.</p>
         </div>
-        <div>
+        <div mobile={isMobile}>
           <Image src={stockImg} alt="stock image" />
         </div>
       </DescriptionContainer>

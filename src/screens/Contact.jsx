@@ -6,6 +6,7 @@ const ContactHeading = styled.h3`
   margin: 0.5rem;
   font-family: 'SpaceMono';
   font-size: ${props => props.primary ? '1.5em' : '1.3em'};
+  text-align: center;
 `
 
 const Contact = () => (
