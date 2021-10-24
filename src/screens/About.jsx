@@ -15,7 +15,7 @@ const DescriptionContainer = styled.div`
   grid-template-rows: ${props => props.mobile ? '1fr 1fr' : '100%'};
   padding: ${props => props.mobile ? '0rem' : '1rem'};
   > div {
-    padding: ${props => props.mobile ? '1rem' : '2rem'};
+    padding: ${props => props.mobile ? '0rem' : '2rem'};
     text-align: ${props => props.mobile ? 'center' : 'left'}
   }
 `
