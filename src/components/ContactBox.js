@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { Button } from "@mui/material";
+import { Button, useMediaQuery } from "@mui/material";
 import ContactInput from '../components/ContactInput';
 
 const ContactInputContainer = styled.div`
         padding: 2rem;
         margin: 1rem;
-        width: 60%;
-        background: #F3FBFB;
+        width: ${props => props.mobile ? '100%' : '60%'};
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -14,8 +13,10 @@ const ContactInputContainer = styled.div`
         align-items: center;
 `;
 
-const ContactBox = () => (
-        <ContactInputContainer>
+const ContactBox = () => {
+        const isMobile = useMediaQuery(theme => theme.breakpoints.down('sm'));
+        return (
+        <ContactInputContainer mobile={isMobile}>
                 <ContactInput id='name' label='Name' multiline={false}/>
                 <ContactInput id='email' label='Email' multiline={false}/>
                 <ContactInput id='unsw' label='UNSW Student?' multiline={false}/>
@@ -25,6 +26,6 @@ const ContactBox = () => (
                         style={{marginTop: '1rem'}}
                 >Submit</Button>
         </ContactInputContainer>
-)
-
+        )
+        }
 export default ContactBox;

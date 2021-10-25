@@ -6,6 +6,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import styled from 'styled-components';
 import About from './screens/About';
 import PastProject from './screens/PastProject';
@@ -32,10 +33,11 @@ const List = styled.ul`
   }
 `;
 
+const theme = createTheme();
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
     <Router>
       <div>
         <Nav>
@@ -84,7 +86,7 @@ function App() {
       </div>
     </Router>
     <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 
