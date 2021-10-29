@@ -1,45 +1,37 @@
 import styled from "styled-components";
-import merchImage1 from "../assets/rehabEng_merch.png";
+import logistics from "../assets/logistics.svg"
+import { useMediaQuery } from "@mui/material";
+
 
 const Container = styled.div`
         display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: ${props => props.mobile ? '6em 2em' : '6em'};
         > div {
-          margin: 0 auto;
           text-align: center;
+          display: flex;
+          flex-direction: ${props => props.mobile ? 'column' : 'row'};
+          align-items: center;
+          justify-content: space-between;
+          > * {
+              width: ${props => props.mobile ? '100%' : '50%'};
+          }
         }
 `
 
-const Support = () => (
-    <Container>
-    <div>
-        <h1> RehabEng Merchandise</h1>
-        <p>All proceeds go directly into providing our members with more exciting projects.</p>
-        <div>
-            <table width="100%">
-                <tr>
-                    <td width="45%" align="right"><img src={merchImage1} alt="merchImageTshirt" width="33%" /></td>
-                    <td width="10%"></td>
-                    <td width="10%" align="center">
-                        <p>RehabEng Unisex Tshirt</p>
-                        <br></br>
-                        <button>Click to buy</button>
-                    </td>
-                    <td width="35%"></td>
-                </tr>
-                <tr>
-                    <td width="45%" align="right"><img src={merchImage1} alt="merchImageTshirt" width="33%" /></td>
-                    <td width="15%"></td>
-                    <td width="10%" align="center">
-                        <p>RehabEng Unisex Tshirt</p>
-                        <br></br>
-                        <button>Click to buy</button>
-                    </td>
-                    <td width="30%"></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    </Container>
-)
+const Support = () => {
+    const isMobile = useMediaQuery(theme => theme.breakpoints.down('sm'));
+    return (
+        <Container mobile={isMobile}>
+            <div>
+                <h1>Merchandise coming soon.</h1>
+                <img src={logistics} alt="logistics stock img" />
+            </div>
+        </Container>
+    )
+}
 
 export default Support;
