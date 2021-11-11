@@ -43,6 +43,12 @@ const Container = styled.div`
                   margin: 1rem;
                   width: 600px;
                 }
+                @media (max-width: 800px) {
+                  > img {
+                    margin: 1rem;
+                    width: 80%;
+                  }
+                }
               }
               > ul {
                 text-align: start;

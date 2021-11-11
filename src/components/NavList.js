@@ -5,9 +5,9 @@ const NavList = () => (
                 <li>
                         <Link to="/">About Us</Link>
                 </li>
-                <li>
+                {/* <li>
                         <Link to='/past-project'>Past Project</Link>
-                </li>
+                </li> */}
                 <li>
                         <Link to='/current-project'>Current Project</Link>
                 </li>

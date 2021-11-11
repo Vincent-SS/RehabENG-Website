@@ -35,9 +35,9 @@ const NavMenu = () => {
 						<MenuItem onClick={handleClose}>
 							<Link to="/">About Us</Link>
 						</MenuItem>
-						<MenuItem onClick={handleClose}>
+						{/* <MenuItem onClick={handleClose}>
 							<Link to='/past-project'>Past Project</Link>
-						</MenuItem>
+						</MenuItem> */}
 						<MenuItem onClick={handleClose}>
 							<Link to='/current-project'>Current Project</Link>
 						</MenuItem>

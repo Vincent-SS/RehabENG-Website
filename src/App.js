@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import About from './screens/About';
-import PastProject from './screens/PastProject';
+// import PastProject from './screens/PastProject';
 import CurrentProject from './screens/CurrentProject';
 import Support from './screens/Support';
 import Contact from './screens/Contact'
@@ -36,9 +36,9 @@ function App() {
           <Route path="/current-project">
             <CurrentProject />
           </Route>
-          <Route path="/past-project">
+          {/* <Route path="/past-project">
             <PastProject />
-          </Route>
+          </Route> */}
           <Route path="/supportus">
             <Support />
           </Route>
