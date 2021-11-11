@@ -3,67 +3,25 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from "react-router-dom";
-import styled from 'styled-components';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import About from './screens/About';
 import PastProject from './screens/PastProject';
 import CurrentProject from './screens/CurrentProject';
 import Support from './screens/Support';
 import Contact from './screens/Contact'
+import Navigation from './components/Navigation'
 import Footer from './components/Footer';
 
-const Nav = styled.nav`
-background-color: #C7EAEC;
-`
-const List = styled.ul`
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1em;
-  li {
-    list-style-type: none;
-    a {
-      font-weight: bold;
-      text-decoration: none;
-      color: #000;
-    }
-  }
-  li:hover {
-    a {
-      position: relative;
-      top: 1px;
-    }
-  }
-`;
-
+const theme = createTheme();
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
     <Router>
       <div>
-        <Nav>
-          <List>
-            <li>
-              <Link to="/">About Us</Link>
-            </li>
-            <li>
-              <Link to='/past-project'>Past Project</Link>
-            </li>
-            <li>
-              <Link to='/current-project'>Current Project</Link>
-            </li>
-            <li>
-              <Link to='/supportus'>Support Us</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </List>
-        </Nav>
+        <Navigation/>
       </div>
       <div>
         {/* A <Switch> looks through its children <Route>s and
@@ -91,7 +49,7 @@ function App() {
       </div>
     </Router>
     <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 
