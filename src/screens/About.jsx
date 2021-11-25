@@ -41,7 +41,7 @@ const About = () => {
       </DescriptionContainer>
       <CenteredDiv>
         <p>
-          Copy Our aim, focus, or a summary of our current projects?<br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+          Copy Our aim, focus, or a summary of our current projects?
         </p>
       </CenteredDiv>
     </Container>
