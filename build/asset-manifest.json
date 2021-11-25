@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.610e58f2.chunk.css",
+    "main.js": "/static/js/main.e11accec.chunk.js",
+    "main.js.map": "/static/js/main.e11accec.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0b99325d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0b99325d.js.map",
+    "static/js/2.21efe3df.chunk.js": "/static/js/2.21efe3df.chunk.js",
+    "static/js/2.21efe3df.chunk.js.map": "/static/js/2.21efe3df.chunk.js.map",
+    "static/js/3.d71c275d.chunk.js": "/static/js/3.d71c275d.chunk.js",
+    "static/js/3.d71c275d.chunk.js.map": "/static/js/3.d71c275d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.610e58f2.chunk.css.map": "/static/css/main.610e58f2.chunk.css.map",
+    "static/js/2.21efe3df.chunk.js.LICENSE.txt": "/static/js/2.21efe3df.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/SpaceMono-Regular.ab58bedc.ttf",
+    "static/media/facebook.a4199a2e.png": "/static/media/facebook.a4199a2e.png",
+    "static/media/logistics.2afaefd2.svg": "/static/media/logistics.2afaefd2.svg",
+    "static/media/mouthStick1.58cf0453.png": "/static/media/mouthStick1.58cf0453.png",
+    "static/media/prostheticHand1.18741d86.png": "/static/media/prostheticHand1.18741d86.png",
+    "static/media/rowingProsthesis.0f2eb90e.png": "/static/media/rowingProsthesis.0f2eb90e.png",
+    "static/media/rowingProsthesis2.1210cc32.png": "/static/media/rowingProsthesis2.1210cc32.png",
+    "static/media/stock.cab7e4f1.svg": "/static/media/stock.cab7e4f1.svg",
+    "static/media/surgical1.2cac3b75.svg": "/static/media/surgical1.2cac3b75.svg",
+    "static/media/surgical2.a572a0db.svg": "/static/media/surgical2.a572a0db.svg",
+    "static/media/surgical3.36a3876a.png": "/static/media/surgical3.36a3876a.png",
+    "static/media/surgical4.a991d689.png": "/static/media/surgical4.a991d689.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b99325d.js",
+    "static/js/2.21efe3df.chunk.js",
+    "static/css/main.610e58f2.chunk.css",
+    "static/js/main.e11accec.chunk.js"
+  ]
+}
