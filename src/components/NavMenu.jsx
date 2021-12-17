@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const NavMenu = () => {
         const [anchorEl, setAnchorEl] = useState(null);
@@ -23,7 +24,7 @@ const NavMenu = () => {
 						aria-expanded={open ? 'true' : undefined}
 						onClick={handleClick}
 					>
-					Menu
+					<MenuIcon></MenuIcon>
 					</Button>
 					<Menu
 						id='nav-menu'

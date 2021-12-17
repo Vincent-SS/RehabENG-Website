@@ -39,11 +39,6 @@ const About = () => {
           <Image src={stockImg} alt="stock image" />
         </div>
       </DescriptionContainer>
-      <CenteredDiv>
-        <p>
-          Copy Our aim, focus, or a summary of our current projects?
-        </p>
-      </CenteredDiv>
     </Container>
   )
 }
